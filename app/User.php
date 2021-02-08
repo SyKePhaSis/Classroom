@@ -39,14 +39,14 @@ class User extends Authenticatable
     ];
 
     public function roles(){
-        return $this->belongsToMany(Role::class);
+        return $this->belongsToMany(Role::class, 'role_user', 'user_id', 'role_id');
     }
 
     protected static function booted()
     {
         static::created(function ($user) {
-            $user->roles()->create([
-                '' => 1,
+            $user->roles()->attach([
+                'role_id' => 1,
             ]);
         });
     }
