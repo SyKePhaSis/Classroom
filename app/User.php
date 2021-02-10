@@ -42,6 +42,10 @@ class User extends Authenticatable
         return $this->belongsToMany(Role::class, 'role_user', 'user_id', 'role_id');
     }
 
+    public function profile(){
+        return $this->hasOne(Profile::class);
+    }
+
     protected static function booted()
     {
         static::created(function ($user) {
@@ -49,6 +53,11 @@ class User extends Authenticatable
                 'role_id' => 1,
             ]);
         });
+
+        static::created(function ($user) {
+            $user->profile()->create();
+        });
+
     }
 
     public function checkRole($inputRole) {

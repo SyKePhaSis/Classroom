@@ -1,0 +1,46 @@
+* {
+    font-family: 'Architects Daughter', cursive;
+}
+
+ body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.container{
+    margin: 0 2vw 0 2vw;
+    max-width: 95vw;
+    padding: 0;
+}
+/* TOP */
+
+.top {
+    width: 100vw;
+    height: 20vh;
+}
+
+.top h1{
+    color:white;
+    font-size: 7vh;
+    border-bottom: 3px white solid;
+}
+
+/* DESCRIPTION */
+
+.description h1{
+    color:white;
+    font-size: 4vh;
+    border-bottom: 2px white solid;
+}
+
+.description h3{
+    color:white;
+    font-size: 2vh;
+}
+
+.description button{
+
+}
+

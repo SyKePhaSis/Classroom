@@ -50,8 +50,16 @@
                             @endif
                         @else
                             <li class="nav-item dropdown d-flex">
+                                <a class="nav-link pr-4" style="font-size: 2vh; color: white;" href="{{ route('profile.show', ['user' => auth()->user()]) }}">
+                                    Profile
+                                </a>
+
                                 <a class="nav-link pr-4" style="font-size: 2vh; color: white;" href="#">
-                                    Class
+                                    Schedule
+                                </a>
+
+                                <a class="nav-link pr-4" style="font-size: 2vh; color: white;" href="#">
+                                    Classes
                                 </a>
 
                                 <a class="nav-link" style="font-size: 2vh; color: white;" href="{{ route('logout') }}"
