@@ -21,9 +21,9 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm text-white" style="background-color: black;">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm text-white" style="background-color: black">
             <div class="container">
-                <a class="navbar-brand text-white" style="font-size: 3vh;" href="{{ url('/') }}">
+                <a class="navbar-brand" style="font-size: 3vh; color: white;" href="{{ url('/') }}">
                     Classroom
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -41,20 +41,20 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link text-white" style="font-size: 2vh;" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" style="color: white ; font-size: 2vh;" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
-                                <li class="nav-item text-white">
+                                <li class="nav-item">
                                     <a class="nav-link" style="color: white; font-size: 2vh;" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
                             <li class="nav-item dropdown d-flex">
-                                <a class="nav-link text-white pr-4" style="font-size: 2vh;" href="#">
+                                <a class="nav-link pr-4" style="font-size: 2vh; color: white;" href="#">
                                     Class
                                 </a>
 
-                                <a class="nav-link text-white" style="font-size: 2vh;" href="{{ route('logout') }}"
+                                <a class="nav-link" style="font-size: 2vh; color: white;" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}

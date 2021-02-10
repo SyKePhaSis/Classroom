@@ -2,13 +2,19 @@
     font-family: 'Architects Daughter', cursive;
  }
 
+ body{
+     width: 100vw;
+     height: 100vh;
+     overflow-x: hidden;
+ }
+
  /* TOP */
 
  .top{
     background-color: black;
     /*background-image: linear-gradient(to bottom, #000000 30%, #ffffff 90%);*/
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
  }
 
  main {
@@ -18,7 +24,7 @@
  .row-1,
  .row-2 {
      color: white;
-     height: 25vh;
+     height: 50vh;
  }
 
 .row-1 h1{
@@ -31,23 +37,55 @@
 
 .container{
     margin: 0 2vw 0 2vw;
-    max-width: 96vw;
+    max-width: 95vw;
     padding: 0;
+}
+
+/* CONNECTOR */
+
+.connector{
+    width: 100vw;
+    height: 10vh;
+    color:white;
+    background-color: Black;
+    border-top: 3px white solid;
+}
+
+.connector .row{
+    width: 95vw;
+    height: 10vh;
+    margin: 0;
+}
+
+.connector h1{
+    font-size: 3vw;
 }
 
 /* SECTION-1 */
 
-.section-1{
+.section{
     width: 100vw;
     height: 50vh;
- }
-
-.imageContainer {
-    height:50vh;
-    margin: 0 10% 0 10%;
+    background-color: black;
+    color:white;
+    border-top: 3px white solid;
 }
 
-.section-1 img{
-    border: 3px black solid;
+.row-3 {
+    width: 95vw;
+    height: 50vh;
+    margin: 0;
+ }
+
+.side-1{
+    border-right: 3px white solid;
+}
+
+.side-1 h1{
+    font-size: 4em;
+}
+
+.side-2 h2{
+    font-size: 2em;
 }
 
