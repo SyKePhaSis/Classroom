@@ -1,0 +1,53 @@
+ * {
+    font-family: 'Architects Daughter', cursive;
+ }
+
+ /* TOP */
+
+ .top{
+    background-color: black;
+    /*background-image: linear-gradient(to bottom, #000000 30%, #ffffff 90%);*/
+    width: 100vw;
+    height: 50vh;
+ }
+
+ main {
+     padding-top: 0;
+ }
+
+ .row-1,
+ .row-2 {
+     color: white;
+     height: 25vh;
+ }
+
+.row-1 h1{
+    font-size: 5vw;
+}
+
+.row-2 h4{
+    font-size: 2vw;
+}
+
+.container{
+    margin: 0 2vw 0 2vw;
+    max-width: 96vw;
+    padding: 0;
+}
+
+/* SECTION-1 */
+
+.section-1{
+    width: 100vw;
+    height: 50vh;
+ }
+
+.imageContainer {
+    height:50vh;
+    margin: 0 10% 0 10%;
+}
+
+.section-1 img{
+    border: 3px black solid;
+}
+
