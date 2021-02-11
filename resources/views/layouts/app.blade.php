@@ -14,13 +14,17 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <style>
+        * {
+            font-family: 'Architects Daughter', cursive;
+        }
+
         ::-webkit-scrollbar{
             background-color: black;
             width: 0.5vw;
@@ -39,9 +43,10 @@
         }
 
     </style>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm text-white" style="background-color: black">
-            <div class="container">
+            <div class="nav-con container" style="margin: 0 2vw 0 2vw; max-width: 96vw;">
                 <a class="navbar-brand" style="font-size: 3vh; color: white;" href="{{ url('/') }}">
                     Classroom
                 </a>

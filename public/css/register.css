@@ -7,6 +7,12 @@ body{
     height: 100vh;
     overflow-x: hidden;
     background-color: black;
+    font-size: large;
+}
+
+.container {
+    margin: 0 2vw 0 2vw;
+    max-width: 96vw;
 }
 
 .register {
