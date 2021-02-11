@@ -1,0 +1,44 @@
+* {
+    font-family: 'Architects Daughter', cursive;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.register {
+    padding-top: 25vh;;
+}
+
+.card {
+  color:white;
+  background-color: black;
+  border: 1px white solid;
+  border-radius: 10px;
+}
+
+.card input {
+    background-color: black;
+    border-bottom: 1px white solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.card input:focus {
+    background-color: black;
+    caret-color: white;
+    color:white;
+}
+
+.card-header {
+    border-bottom: 1px white solid;
+}
+
+.card-body {
+    margin-top: 2vh;
+}
