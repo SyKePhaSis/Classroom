@@ -27,6 +27,7 @@ body{
     border-left: 0;
     border-right: 0;
     border-radius: 0;
+    color: white;
 }
 
 .card input:focus {
@@ -34,6 +35,8 @@ body{
     caret-color: white;
     color:white;
 }
+
+
 
 .card-header {
     border-bottom: 1px white solid;

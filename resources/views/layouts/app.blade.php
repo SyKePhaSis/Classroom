@@ -20,6 +20,25 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    <style>
+        ::-webkit-scrollbar{
+            background-color: black;
+            width: 0.5vw;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: white;
+            border-radius: 30px;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus{
+            -webkit-text-fill-color: white;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+    </style>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm text-white" style="background-color: black">
             <div class="container">
