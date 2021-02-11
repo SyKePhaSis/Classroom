@@ -27,6 +27,11 @@ class AdminSeeder extends Seeder
                 'role_id' => '3',
             ]);
 
+            DB::table('profiles')->insert([
+                'user_id' => '1',
+                'description' => 'This is an admin account!',
+                'email' => 'admin@admin.com',
+            ]);
         }
     }
 }

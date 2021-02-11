@@ -29,19 +29,47 @@
             <div class="description">
                 <div class="container">
                     <div class="row pt-5">
-                        <div class="offset-4 col-4 offset-4">
+                        <div class="offset-2 col-8 offset-2">
                             <div class="title pb-3 d-flex align-content-between align-items-baseline">
                                 <h1 class="text-capitalize">Description</h1>
                                 @if($user->id === auth()->user()->id)
                                     <div class="button pl-3">
-                                        <button action="" class="btn btn-primary btn-lg">Edit</button>
+                                        <button action="" class="btn btn-primary">Edit</button>
                                     </div>
                                 @endif
                             </div>
 
-                            <h3 class=> {{ $user->profile->description ?? "This user doesn't have a description"}} </h3>
+                            <h3> {{ $user->profile->description ?? "This user doesn't have a description"}} </h3>
                         </div>
                     </div>
+
+
+                    @if ($user->profile->phone != NULL || $user->profile->email != NULL)
+
+
+                    <div class="row pt-5">
+                        <div class="offset-2 col-8 offset-2">
+                            <div class="d-flex align-content-between align-items-baseline">
+                                <h1 class="text-capitalize">Contact Information</h1>
+                                @if($user->id === auth()->user()->id)
+                                    <div class="button pl-3">
+                                        <button action="" class="btn btn-primary">Edit</button>
+                                    </div>
+                                @endif
+                            </div>
+
+                            @if ($user->profile->phone != NULL)
+                                <h3 class="pt-3">Phone: {{ $user->profile->phone }}</h3>
+                            @endif
+
+                            @if ($user->profile->email != NULL)
+                            <h3 class="pt-3">Email: {{ $user->profile->email }}</h3>
+                            @endif
+                        </div>
+                    </div>
+
+                    @endif
+
                 </div>
             </div>
         </div>
