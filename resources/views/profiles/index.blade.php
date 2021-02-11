@@ -34,18 +34,19 @@
                                 <h1 class="text-capitalize">Description</h1>
                                 @if($user->id === auth()->user()->id)
                                     <div class="button pl-3">
-                                        <button action="" class="btn btn-primary">Edit</button>
+                                        <form action="{{ route('profile.edit', ['user' => $user->id])}}" method='get'>
+                                            <button type='submit' class="btn btn-primary">Edit</button>
+                                        </form>
                                     </div>
                                 @endif
                             </div>
 
-                            <h3> {{ $user->profile->description ?? "This user doesn't have a description"}} </h3>
+                            <h3 class="text-break"> {{ $user->profile->description ?? "This user doesn't have a description"}} </h3>
                         </div>
                     </div>
 
 
                     @if ($user->profile->phone != NULL || $user->profile->email != NULL)
-
 
                     <div class="row pt-5">
                         <div class="offset-2 col-8 offset-2">
@@ -53,7 +54,9 @@
                                 <h1 class="text-capitalize">Contact Information</h1>
                                 @if($user->id === auth()->user()->id)
                                     <div class="button pl-3">
-                                        <button action="" class="btn btn-primary">Edit</button>
+                                        <form action="{{ route('profile.edit', ['user' => $user->id])}}" method='get'>
+                                            <button type='submit' class="btn btn-primary">Edit</button>
+                                        </form>
                                     </div>
                                 @endif
                             </div>

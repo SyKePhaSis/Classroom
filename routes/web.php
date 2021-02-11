@@ -22,3 +22,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/{user}/profile', 'ProfilesController@index')->name('profile.show');
+Route::get('/{user}/profile/edit', 'ProfilesController@edit')->name('profile.edit')->middleware('auth');
+Route::patch('/{user}/profile/edit', 'ProfilesController@update')->name('profile.update')->middleware('auth');
